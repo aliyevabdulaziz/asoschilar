@@ -8,6 +8,107 @@
 		<!-- Splide CSS CDN -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 		<link rel="stylesheet" href="style.css" />
+
+        <style>
+        /* Critical above-the-fold CSS */
+        :root {
+            --dark-blue: #0f172a;
+            --gray-color: #475569;
+            --dark-gray: #334155;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 62.5%;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><rect width="60" height="60" fill="%23f8f9fa"/></svg>');
+            background-position: center center;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .header {
+            padding: 20px 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #111827;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .btn-primary {
+            text-decoration: none;
+            background-color: #111827;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .hero {
+            padding: 170px 0;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+        .hero-description {
+            color: #4B5563;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .consultant-image {
+            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .nav-list, .desktop-btn { display: none; }
+            .hamburger-btn { display: block; }
+            .hero-content { flex-direction: column; }
+            .hero-title { font-size: 28px; }
+        }
+    </style>
 	</head>
 	<body>
         <header class="header">
@@ -535,11 +636,11 @@
 			</div>
 		</footer>
     <!-- Splide JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
 
-		<script src="main.js"></script>
+		<script src="main.js" defer></script>
 
-		<script>
+		<script defer>
 			const scriptURL =
 				'https://script.google.com/macros/s/AKfycbx1pvO6XHmc9bGUbhqpkwqng-QZWBjyCrMj4LsZpJth3Us7OXdIA3voJ886ehGDsb0B/exec';
 			const form = document.forms['asoschilar'];
