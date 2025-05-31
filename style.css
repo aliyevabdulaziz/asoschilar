@@ -278,6 +278,8 @@ display: none;
     padding: 6px 12px;
     border-radius: 16px;
     margin-bottom: 24px;
+    position: sticky;
+    top: 50px;
 }
 
 .intro-badge svg {
@@ -295,6 +297,8 @@ display: none;
     font-weight: 600;
     line-height: 1.4;
     color: #111827;
+    position: sticky;
+    top: 100px;
 }
 
 /* Services column styles */
