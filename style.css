@@ -1743,6 +1743,7 @@ input::placeholder {
     overflow: hidden;
 }
 
+
 .stat-card:hover::before {
     opacity: 1;
 }
